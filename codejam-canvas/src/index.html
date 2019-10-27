@@ -7,5 +7,76 @@
   <title>Codejam-canvas</title>
 </head>
 <body>
+  <header class="header">
+    <a href="#" class="header__logo">CodeJam - Pallete</a>
+  </header>
+  <main class="main">
+    <div class="main__left-block">
+      <div class="main__tool-bar">
+        <ul class="list">
+          <li class="list__item">
+            <button class="button button--paint-backet">Paint bucket</button>
+          </li>
+          <li class="list__item">
+            <button class="button button--pipette">Choose color</button>
+          </li>
+          <li class="list__item">
+            <button class="button button--move">Move</button>
+          </li>
+          <li class="list__item">
+            <button class="button button--transform">Transform</button>
+          </li>
+        </ul>
+      </div>
+      <div class="color-bar">
+        <ul class="list">
+          <li class="list__item">
+            <div class="color">
+              <span class="color__image"></span>
+              <p class="color__name">Current color</p>
+            </div>
+          </li>
+          <li class="list__item">
+            <div class="color">
+              <span class="color__image color__image--green"></span>
+              <p class="color__name">Prev color</p>
+            </div>
+          </li>
+          <li class="list__item">
+            <div class="color">
+              <span class="color__image color__image--red"></span>
+              <p class="color__name">Red</p>
+            </div>
+          </li>
+          <li class="list__item">
+            <div class="color">
+              <span class="color__image color__image--blue"></span>
+              <p class="color__name">Blue</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="main__center-block">
+      <div class="main__canvas">
+        <canvas id="canvas" width="512" height="512"></canvas>
+      </div>
+    </div>
+    <div class="main__right-block">
+      <div class="images">
+        <ul id="image-bar" class="list">
+          <li class="list__item">
+            <button class="button button--frame" data-index="0">4x4</button>
+          </li>
+          <li class="list__item">
+            <button class="button button--frame" data-index="1">32x32</button>
+          </li>
+          <li class="list__item">
+            <button class="button button--frame" data-index="2">256x256</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </main>
 </body>
 </html>

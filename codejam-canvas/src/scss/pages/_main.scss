@@ -1,0 +1,33 @@
+.main {
+  display: flex;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 80px 30px 0;
+  min-height: calc(100vh - 48px);
+
+  background-color: #ffffff;
+}
+
+.main__left-block {
+  width: 20%;
+}
+
+.main__center-block {
+  width: 60%;
+}
+
+.main__canvas {
+  max-width: 512px;
+  margin: 0 auto;
+
+  background-color: #f1f1f1;
+}
+
+.main__right-block {
+  width: 20%;
+  text-align: right;
+}
+
+.main__tool-bar {
+  margin: 0 0 90px 0;
+}

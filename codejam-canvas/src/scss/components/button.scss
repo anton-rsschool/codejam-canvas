@@ -1,0 +1,54 @@
+.button {
+  position: relative;
+
+  min-width: 200px;
+  padding: 12px 14px 12px 75px;
+
+  @include font-styles(16px, 24px, $main-font-color);
+  text-align-last: left;
+
+  background: none;
+  border: 0;
+  cursor: pointer;
+  outline: none;
+
+  &--active {
+    box-shadow: 0 1px 9px rgba(0,0,0,0.45) inset;
+  }
+
+  &:hover {
+    background-color: #f2f2f2;
+  }
+
+  &::before {
+    position: absolute;
+    top: 14px;
+    left: 18px;
+    width: 20px;
+    height: 20px;
+    
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    content: "";
+  }
+
+  &--paint-backet::before {
+    background-image: url("../assets/images/paint-basket-icon.svg");
+  }
+
+  &--pipette::before {
+    background-image: url("../assets/images/pipette-icon.svg");
+  }
+
+  &--move::before {
+    background-image: url("../assets/images/move-icon.svg");
+  }
+
+  &--transform::before {
+    background-image: url("../assets/images/transform-icon.svg");
+  }
+
+  &--frame::before {
+    background-image: url("../assets/images/frame-icon.svg");
+  }
+}
