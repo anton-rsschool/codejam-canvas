@@ -1,0 +1,49 @@
+.header {
+  position: relative;
+  display: flex;
+  padding: 0 30px;
+
+  max-width: 1440px;
+  margin: 0 auto;
+  height: 48px;
+
+  background-color: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.24), 0px 0px 4px rgba(0, 0, 0, 0.12);
+}
+
+.header__logo {
+  display: inline-block;
+  margin: 8px 30px 16px;
+
+  @include font-styles(20px, 23px, $second-font-color, 500);
+  text-decoration: none;
+  
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+.header__button {
+  width: 18px;
+  height: 16px;
+  margin: 11px 0 0 0;
+
+  border: 0;
+  background-color: $main-color;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &--menu {
+    background-image: url("../assets/images/menu-icon.svg");
+  }
+
+  &--setting {
+    margin-left: auto;
+    background-image: url("../assets/images/setting-icon.svg");
+  }
+}

@@ -1,0 +1,6 @@
+@mixin font-styles($size: false, $lh: false, $colour: false, $weight: false) {
+  @if $size { font-size: $size; }
+  @if $lh { line-height: $lh; }
+  @if $colour { color: $colour; }
+  @if $weight { font-weight: $weight; }
+}
